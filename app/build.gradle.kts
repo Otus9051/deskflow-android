@@ -56,12 +56,12 @@ val (projectVersionName, projectVersionCode) = readVersionProperties(project)
 
 android {
   namespace = "org.tfv.deskflow"
-  buildToolsVersion = "36.0.0"
-  compileSdk = 36
+  buildToolsVersion = "26.0.3"
+  compileSdk = 26
 
   defaultConfig {
     applicationId = "org.tfv.deskflow"
-    minSdk = 34
+    minSdk = 21
 
     versionCode = projectVersionCode
     versionName = projectVersionName
@@ -119,10 +119,10 @@ android {
   }
 
   compileOptions {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
   }
-  kotlinOptions { jvmTarget = "17" }
+  kotlinOptions { jvmTarget = "1.8" }
   dependenciesInfo {
     includeInApk = true
     includeInBundle = true
